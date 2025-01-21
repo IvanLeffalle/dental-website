@@ -43,18 +43,19 @@ const Header = () => {
         </motion.div>
 
         {/* Call-to-Action Button - Moved inside content container */}
-        <motion.button
+        <motion.a
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          className="mt-8 lg:mt-12 bg-white flex items-center text-blue-950 font-semibold rounded-xl py-4 px-8 hover:bg-blue-50 transition-all duration-300 shadow-lg text-lg"
+          className="mt-8 lg:mt-12 max-w-64 bg-white flex items-center text-blue-950 font-semibold rounded-xl py-4 px-8 hover:bg-blue-50 transition-all duration-300 shadow-lg text-lg"
           aria-label="Sacar un Turno"
+          href="https://citas-pi-two.vercel.app/"
         >
           <CalendarPlus2 size={20} className="mr-3" />
           Sacar un Turno
-        </motion.button>
+        </motion.a>
       </div>
     </div>
   );

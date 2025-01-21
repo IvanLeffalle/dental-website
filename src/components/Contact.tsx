@@ -53,7 +53,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="text-white font-semibold">Teléfono</h3>
-                    <p className="text-white/80">+54 (362) 000-0000</p>
+                    <p className="text-white/80">+54 (362) 4985198</p>
                   </div>
                 </div>
 
@@ -64,7 +64,7 @@ export default function Contact() {
                   <div>
                     <h3 className="text-white font-semibold">Dirección</h3>
                     <p className="text-white/80">
-                      Av. Example 123, Resistencia, Chaco
+                      Obligado 721, Resistencia, Chaco
                     </p>
                   </div>
                 </div>

@@ -1,6 +1,12 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Facebook, Twitter, Instagram, ArrowUpRight } from "lucide-react";
+import {
+  Facebook,
+  Twitter,
+  Instagram,
+  ArrowUpRight,
+  CalendarCheck,
+} from "lucide-react";
 
 export default function Footer() {
   return (
@@ -49,9 +55,12 @@ export default function Footer() {
             <h3 className="text-xl font-semibold text-white mb-6">Contacto</h3>
             <ul className="space-y-4">
               {[
-                { text: "Calle Falsa 123, Ciudad, País", label: "Dirección" },
-                { text: "+123 456 7890", label: "Teléfono" },
-                { text: "info@tudominio.com", label: "Email" },
+                {
+                  text: "Obligado 721, Resistencia, Argentina",
+                  label: "Dirección",
+                },
+                { text: "3624985198", label: "Teléfono" },
+                { text: "ivanmleffalle@gmail.com", label: "Email" },
               ].map((item) => (
                 <li key={item.label}>
                   <p className="text-white/80">
@@ -74,13 +83,25 @@ export default function Footer() {
             <h3 className="text-xl font-semibold text-white mb-6">Síguenos</h3>
             <div className="flex space-x-4">
               {[
-                { icon: <Facebook />, label: "Facebook" },
-                { icon: <Twitter />, label: "Twitter" },
-                { icon: <Instagram />, label: "Instagram" },
+                {
+                  icon: <Facebook />,
+                  label: "Facebook",
+                  href: "https://www.facebook.com/drleffalle/",
+                },
+                {
+                  icon: <Twitter />,
+                  label: "LinkedIn",
+                  href: "https://www.linkedin.com/in/leffalleivan/",
+                },
+                {
+                  icon: <CalendarCheck />,
+                  label: "CalendAr",
+                  href: "https://citas-pi-two.vercel.app/",
+                },
               ].map((social) => (
                 <motion.a
                   key={social.label}
-                  href="#"
+                  href={social.href}
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.95 }}
                   className="p-3 bg-white/10 rounded-xl hover:bg-white/20 transition-colors"
@@ -103,7 +124,7 @@ export default function Footer() {
           className="border-t border-white/10 mt-12 pt-8 text-center"
         >
           <p className="text-sm text-white/60">
-            © {new Date().getFullYear()} Tu Empresa. Todos los derechos
+            © {new Date().getFullYear()} Od. Ivan Leffalle. Todos los derechos
             reservados.
           </p>
         </motion.div>

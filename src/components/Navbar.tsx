@@ -1,15 +1,15 @@
-import React, { useState } from "react";
-import { Menu, X, User, Search } from "lucide-react";
+import { useState } from "react";
+import { Menu, X, User } from "lucide-react";
 import { motion } from "framer-motion";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const menuItems = [
-    { name: "Inicio", href: "#" },
-    { name: "Servicios", href: "#" },
-    { name: "Doctores", href: "#" },
-    { name: "Contacto", href: "#" },
+    { name: "Inicio", href: "#inicio" },
+    { name: "Servicios", href: "#servicios" },
+    { name: "Acerca", href: "#acerca" },
+    { name: "Contacto", href: "#contacto" },
   ];
 
   return (
@@ -103,6 +103,7 @@ const Navbar = () => {
               <motion.a
                 key={item.name}
                 href={item.href}
+                onClick={() => setIsMenuOpen(false)} // Cierra el menú al hacer clic
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.2, delay: index * 0.1 }}
@@ -112,14 +113,6 @@ const Navbar = () => {
               </motion.a>
             ))}
             <div className="border-t border-white/10 mt-4 pt-4">
-              <motion.button
-                whileHover={{ x: 5 }}
-                className="flex items-center w-full px-3 py-2 text-base font-medium text-white/80 hover:text-white hover:bg-white/10 rounded-md transition-colors duration-200"
-                aria-label="Search"
-              >
-                <Search size={20} className="mr-3" />
-                Buscar
-              </motion.button>
               <motion.button
                 whileHover={{ x: 5 }}
                 className="flex items-center w-full px-3 py-2 text-base font-medium text-white/80 hover:text-white hover:bg-white/10 rounded-md transition-colors duration-200"

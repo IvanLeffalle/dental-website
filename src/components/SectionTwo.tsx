@@ -6,7 +6,7 @@ const SectionTwo = () => {
   return (
     <section className="w-full py-12 md:py-16 px-4 md:px-8 overflow-hidden bg-gray-50 rounded-xl">
       <div className="lg:max-w-10xl mx-auto">
-        <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center ">
+        <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
           {/* Text Section */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -27,10 +27,34 @@ const SectionTwo = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.3 }}
-              className="text-3xl md:text-4xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight break-words"
+              className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight break-words"
             >
-              Atención Personalizada en Resistencia Chaco
+              Atención Personalizada en Resistencia, Chaco
             </motion.h2>
+
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.4 }}
+              className="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed"
+            >
+              En nuestro consultorio, nos enfocamos en brindarte un servicio de
+              calidad con tecnología de vanguardia y un trato cercano. Desde
+              limpiezas dentales hasta tratamientos especializados, estamos aquí
+              para cuidar de tu salud bucal.
+            </motion.p>
+
+            <motion.button
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.5 }}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="bg-blue-600 text-white font-semibold rounded-xl py-3 px-8 hover:bg-blue-700 transition-all duration-300 shadow-lg text-lg"
+              aria-label="Conocer más sobre nuestros servicios"
+            >
+              Conocer Más
+            </motion.button>
           </motion.div>
 
           {/* Image Section */}

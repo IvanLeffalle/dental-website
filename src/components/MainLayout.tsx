@@ -34,6 +34,7 @@ export default function MainLayout() {
           initial="initial"
           whileInView="whileInView"
           viewport={{ once: true }}
+          id="inicio"
         >
           <Header />
         </motion.section>
@@ -44,6 +45,7 @@ export default function MainLayout() {
           initial="initial"
           whileInView="whileInView"
           viewport={{ once: true }}
+          id="servicios"
         >
           <Main />
         </motion.section>
@@ -54,6 +56,7 @@ export default function MainLayout() {
           initial="initial"
           whileInView="whileInView"
           viewport={{ once: true }}
+          id="acerca"
         >
           <SectionTwo />
         </motion.section>
@@ -63,6 +66,7 @@ export default function MainLayout() {
           initial="initial"
           whileInView="whileInView"
           viewport={{ once: true }}
+          id="contacto"
         >
           <Contact />
         </motion.section>
