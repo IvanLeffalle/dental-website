@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import image from "../assets/dentista-chaco.jpg";
 

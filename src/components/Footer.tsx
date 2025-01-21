@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import {
   Facebook,
   Twitter,
-  Instagram,
   ArrowUpRight,
   CalendarCheck,
 } from "lucide-react";
