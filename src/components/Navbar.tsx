@@ -2,6 +2,8 @@ import { useState } from "react";
 import { Menu, X, User } from "lucide-react";
 import { motion } from "framer-motion";
 import image from "../assets/logo.png";
+import { AiOutlineWhatsApp } from "react-icons/ai";
+
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -30,7 +32,12 @@ const Navbar = () => {
             transition={{ duration: 0.5 }}
             className="flex-shrink-0 flex items-center"
           >
-            <img src={image} alt="Logo" className="w-12 h-12 mr-2" loading="eager" />
+            <img
+              src={image}
+              alt="Logo"
+              className="w-12 h-12 mr-2"
+              loading="eager"
+            />
             <div className="text-white font-bold text-2xl">I.Leffalle</div>
           </motion.div>
 
@@ -66,8 +73,13 @@ const Navbar = () => {
               className="flex items-center space-x-2 px-4 py-2 text-white/80 hover:text-white rounded-xl hover:bg-white/10 transition-colors duration-200"
               aria-label="Profile"
             >
-              <User size={20} />
-              <span className="text-sm font-medium">Mi Cuenta</span>
+              <a
+                href="https://wa.me/+5493624985198/?text=urlencodedtext/"
+                className="flex items-center gap-2"
+              >
+                <AiOutlineWhatsApp size={20} />
+                <span className="text-sm font-medium">WhatsApp</span>
+              </a>
             </motion.button>
           </motion.div>
 
@@ -119,8 +131,13 @@ const Navbar = () => {
                 className="flex items-center w-full px-3 py-2 text-base font-medium text-white/80 hover:text-white hover:bg-white/10 rounded-md transition-colors duration-200"
                 aria-label="Profile"
               >
-                <User size={20} className="mr-3" />
-                Mi Cuenta
+                <a
+                  href="https://wa.me/+5493624985198/?text=urlencodedtext/"
+                  className="flex items-center "
+                >
+                  <AiOutlineWhatsApp size={20} className="mr-3" />
+                  WhatsApp{" "}
+                </a>
               </motion.button>
             </div>
           </div>
