@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Menu, X, User } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { motion } from "framer-motion";
 import image from "../assets/logo.png";
 import { AiOutlineWhatsApp } from "react-icons/ai";
