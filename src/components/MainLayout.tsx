@@ -5,7 +5,7 @@ import Header from "./Header";
 import Main from "./Main";
 import Navbar from "./Navbar";
 import SectionTwo from "./SectionTwo";
-
+import Contact from "./Contact";
 const fadeInUp = {
   initial: { opacity: 0, y: 20 },
   whileInView: { opacity: 1, y: 0 },
@@ -57,7 +57,15 @@ export default function MainLayout() {
         >
           <SectionTwo />
         </motion.section>
-
+        {/* Contact Section */}
+        <motion.section
+          variants={fadeInUp}
+          initial="initial"
+          whileInView="whileInView"
+          viewport={{ once: true }}
+        >
+          <Contact />
+        </motion.section>
         {/* Footer */}
         <motion.footer
           variants={fadeInUp}

@@ -27,13 +27,13 @@ const ServiceCard = ({ title, description, bgColor, icon }: CardProps) => {
 
       {/* Content */}
       <div className="flex items-start justify-between mb-6">
-        <div className="p-3 bg-white/20 rounded-lg backdrop-blur-sm">
+        <div className="p-3 bg-white/20 rounded-xl backdrop-blur-sm">
           {icon}
         </div>
         <motion.button
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95 }}
-          className="p-2 bg-white/10 rounded-lg hover:bg-white/20 transition-colors duration-200"
+          className="p-2 bg-white/10 rounded-xl hover:bg-white/20 transition-colors duration-200"
           aria-label="Learn more"
         >
           <ArrowUpRight className="w-5 h-5 text-white" />
@@ -62,23 +62,23 @@ const ServiceCard = ({ title, description, bgColor, icon }: CardProps) => {
 const ServicesSection = () => {
   const services = [
     {
-      title: "Consultas Médicas",
+      title: "Odontología General",
       description:
-        "Atención personalizada con profesionales especializados para cuidar tu salud de manera integral.",
+        "Tratamientos integrales para mantener tu salud bucal en óptimas condiciones, desde limpiezas hasta restauraciones.",
       bgColor: "bg-blue-600",
       icon: <Clock className="w-6 h-6 text-white" />,
     },
     {
-      title: "Atención Familiar",
+      title: "Extracciones Dentales",
       description:
         "Cuidado médico completo para toda tu familia, desde pediatría hasta geriatría.",
       bgColor: "bg-emerald-600",
       icon: <Users className="w-6 h-6 text-white" />,
     },
     {
-      title: "Servicios Premium",
+      title: "Arreglos Estéticos",
       description:
-        "Acceso prioritario y beneficios exclusivos para nuestros pacientes premium.",
+        "Blanqueamientos, carillas y otros tratamientos para lograr una sonrisa radiante y natural.",
       bgColor: "bg-violet-600",
       icon: <BadgeCheck className="w-6 h-6 text-white" />,
     },
