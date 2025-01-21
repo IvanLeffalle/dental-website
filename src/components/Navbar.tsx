@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Menu, X, User } from "lucide-react";
 import { motion } from "framer-motion";
-
+import image from "../assets/logo.png";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -30,7 +30,8 @@ const Navbar = () => {
             transition={{ duration: 0.5 }}
             className="flex-shrink-0 flex items-center"
           >
-            <div className="text-white font-bold text-2xl">Clínica</div>
+            <img src={image} alt="Logo" className="w-12 h-12 mr-2" loading="eager" />
+            <div className="text-white font-bold text-2xl">I.Leffalle</div>
           </motion.div>
 
           {/* Desktop Menu */}

@@ -54,7 +54,7 @@ const Header = () => {
           href="https://citas-pi-two.vercel.app/"
         >
           <CalendarPlus2 size={20} className="mr-3" />
-          Sacar un Turno
+          Agendar una Cita{" "}
         </motion.a>
       </div>
     </div>
