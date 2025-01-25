@@ -71,7 +71,7 @@ const ServicesSection = () => {
     {
       title: "Extracciones Dentales",
       description:
-        "Cuidado médico completo para toda tu familia, desde pediatría hasta geriatría.",
+        "Extracción segura y profesional de dientes dañados o problemáticos, con cuidado postoperatorio adecuado.",
       bgColor: "bg-emerald-600",
       icon: <Users className="w-6 h-6 text-white" />,
     },
